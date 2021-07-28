@@ -13,3 +13,6 @@ class TestCustomer (unittest.TestCase):
     def test_customer_has_wallet(self):
         self.assertEqual(2000, self.customer.wallet)
 
+    # def test_buy_drink(self, drink):
+    #     self.assertEqual(1500, )
+    #     pass
