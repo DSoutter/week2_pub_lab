@@ -4,5 +4,6 @@ class Pub:
         self.till = till
         self.drinks = drinks
     
-    def sell_drink():
-        pass
+    def increase_till(self, drink):
+        self.till += drink.price
+        
