@@ -2,12 +2,13 @@ import unittest
 from src.pub import *
 from src.customer import *
 from src.drinks import *
+from src.food import *
 
 class TestDrinks (unittest.TestCase):
     def setUp(self):
-        self.drinks1 = Drink("Beer", 200)
-        self.drinks2 = Drink("Wine", 300)
-        self.drinks3 = Drink("Gin", 350)
+        self.drinks1 = Drink("Beer", 200, 2)
+        self.drinks2 = Drink("Wine", 300, 2.5)
+        self.drinks3 = Drink("Gin", 350, 3.5)
         drinks = [self.drinks1, self.drinks2, self.drinks3] 
 
     def test_pub_has_drinks(self):
